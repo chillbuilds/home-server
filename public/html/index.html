@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>podcast player</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    
+    <div id="container">
+
+        <div id="podcast-list">
+
+        </div>
+
+        <audio id="audio-player">
+            Your browser does not support the audio element.
+        </audio>      
+
+        <div id="audio-controls-container">
+            <div id="audio-controls">
+                <div id="podcast-thumb" style="position:relative; float:left;">
+                    <img id="thumb-img">
+                </div>
+                <div style="position:relative; width: 80%; float:left;">
+                    <div id="current-track"></div>
+                    <div id="control-btns">
+                        <div class="control-btn" id="prev-track">
+                            <img class="control-icon" src="../images/icons/prev-track.png">
+                        </div>
+                        <div class="control-btn" id="skip-back">
+                            <img class="control-icon" src="../images/icons/prev-skip.png">
+                        </div>
+                        <div class="control-btn" id="play">
+                            <img class="control-icon" src="../images/icons/play.png">
+                        </div>
+                        <div class="control-btn" id="pause" style="display: none;">
+                            <img class="control-icon" src="../images/icons/pause.png">
+                        </div>
+                        <div class="control-btn" id="skip-forward">
+                            <img class="control-icon" src="../images/icons/next-skip.png">
+                        </div>
+                        <div class="control-btn" id="next-track">
+                            <img class="control-icon" src="../images/icons/next-track.png">
+                        </div>
+                    </div>
+                </div>
+                <div id="audio-slider-container">
+                    <input type="range" id="audio-slider" min="0" max="100" step="1" value="0">
+                    <div id="track-time"><span id="currentTime"></span><span id="trackDuration"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/jquery.js"></script>
+    <script src="../scripts/index.js"></script>
+</body>
+</html>
